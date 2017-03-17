@@ -1,7 +1,7 @@
 'use strict';
 
 const { assert: {isArray, equal} } = require("chai");
-const { listOfOrders } = require("../lib/listOfOrders.js");
+const { listOfOrders, listOfItems } = require("../lib/listOfOrders.js");
 
 
 describe('listOfOrders', () => {
@@ -16,4 +16,14 @@ describe('listOfOrders', () => {
       });
   })
 
+
 });
+
+describe('listOfItems', () => {
+  it('should return an array', () => {
+    return listOfItems(3)
+    .then((data) => {
+      isArray(data)
+    })
+  })
+})

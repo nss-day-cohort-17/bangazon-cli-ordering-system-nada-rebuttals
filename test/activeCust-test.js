@@ -1,11 +1,15 @@
 'use strict';
 
-const { assert: { isArray } } = require("chai");
-const { activeCust } = require("../lib/activeCust");
+const { assert: { isObject } } = require("chai");
+const { activeCust, list } = require("../lib/activeCust");
 
 
 describe('activeCust', () => {
   it('should return an object', () => {
-    isArray(activeCust());
+    return activeCust()
+    .then((res)=>{
+      console.log(res);
+      isObject(res)
+    })
   });
 })
