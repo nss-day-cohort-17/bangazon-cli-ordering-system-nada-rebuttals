@@ -22,9 +22,9 @@
   "homepage": "https://github.com/nss-day-cohort-17/bangazon-cli-ordering-system-nada-rebuttals#readme",
   "dependencies": {
     "chai": "^3.5.0",
-    "cli-table": "^0.3.1",
     "mocha": "^3.2.0",
     "prompt": "^1.0.0",
+    "cli-table": "^0.3.1",
     "sqlite3": "^3.1.8"
   }
 }
