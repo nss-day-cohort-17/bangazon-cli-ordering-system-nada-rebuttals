@@ -1,10 +1,12 @@
 'use strict';
 
-const { assert: {isObject} } = require("chai");
-const { mainMenu } = require("../lib/mainMenu.js");
+const { assert: {isObject, isFunction} } = require("chai");
+const { mainMenuPrompt } = require("../lib/mainMenu.js");
 
 describe('mainMenu', () => {
-  it('should return an object', () => {
-    isObject(mainMenu());
-  });
+  describe('mainMenuPrompt', () => {
+    it('should be a function', () => {
+      isFunction(mainMenuPrompt);
+    });
+  })
 });
